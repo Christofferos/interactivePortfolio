@@ -22,6 +22,12 @@
       line-height: 1;
       margin-bottom: 1rem;
     }
+
+    .sm-heading {
+      margin-bottom: 2rem;
+      padding: 0.2rem 1rem;
+      width: 100%; // FIx
+    }
   }
 
   ul.menu-nav,
@@ -72,6 +78,11 @@
 @include mediaSm {
   main#home h1 {
     margin-top: 10vh;
+    font-size: 3rem;
+  }
+
+  #span-email {
+    font-size: 20px;
   }
 
   .projects {

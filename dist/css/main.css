@@ -55,7 +55,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url(/dist/img/portrait.jpg);
+      background: url(../img/portrait.jpg);
       border-radius: 50%;
       border: solid 3px #eece1a; }
   .menu .nav-item {
@@ -141,7 +141,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/background.jpg);
+    background: url(../img/background2.jpg);
     background-attachment: fixed;
     background-size: cover;
     /* Sudo-element - puts in something that is not in the HTML - This is the overlay*/ }
@@ -163,12 +163,13 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 4rem; }
+    font-size: 4.5rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
+    width: 68vh;
     background: rgba(73, 73, 73, 0.5); }
 
 a {
@@ -292,6 +293,10 @@ main {
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
+    main .sm-heading {
+      margin-bottom: 2rem;
+      padding: 0.2rem 1rem;
+      width: 100%; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -319,6 +324,9 @@ main {
 
 @media screen and (max-width: 500px) {
   main#home h1 {
-    margin-top: 10vh; }
+    margin-top: 10vh;
+    font-size: 3rem; }
+  #span-email {
+    font-size: 20px; }
   .projects {
     grid-template-columns: 1fr; } }
