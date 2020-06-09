@@ -3,12 +3,57 @@
   .projects {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  h1 {
+    &.lg-heading {
+      font-size: 5.5rem;
+    }
+  }
+  h2 {
+    &.sm-heading {
+      font-size: 30px;
+      width: 82vh; // FIx
+    }
+  }
+
+  .menu-btn {
+    .btn-line {
+      width: 112px;
+      height: 12px;
+      margin: 0 0 10px 0;
+    }
+
+    &.close {
+      .btn-line {
+        // Line 3- Rotate
+        &:nth-child(3) {
+          transform: rotate(-45deg) translate(26px, -24px);
+        }
+      }
+    }
+  }
 }
 
 // Desktops & Laptops
 @include mediaLg {
   .projects {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .menu-btn {
+    .btn-line {
+      width: 56px;
+      height: 6px;
+    }
+
+    &.close {
+      .btn-line {
+        // Line 1 -Rotate
+        &:nth-child(1) {
+          transform: rotate(45deg) translate(8px, 8px);
+        }
+      }
+    }
   }
 }
 
@@ -62,6 +107,7 @@
     grid-template-areas:
       "bioimage"
       "bio"
+      "bio2"
       "job1"
       "job2"
       "job3";
@@ -82,6 +128,12 @@
   }
 
   #span-email {
+    font-size: 20px;
+  }
+  #span-phone {
+    font-size: 20px;
+  }
+  #span-other {
     font-size: 20px;
   }
 

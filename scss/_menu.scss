@@ -12,7 +12,18 @@
     height: 3px;
     margin: 0 0 5px 0;
     background: set-text-color($primary-color);
+    animation: blink 1s;
+    animation-iteration-count: 2;
     @include easeOut;
+
+    @keyframes blink {
+      0% {
+        background: #fff;
+      }
+      50% {
+        background: $secondary-color;
+      }
+    }
   }
 
   // Rotate Into X With Menu Lines
@@ -37,6 +48,10 @@
       }
     }
   }
+}
+
+.menu-btn:hover .btn-line {
+  background: $secondary-color;
 }
 
 // Menu Overlay

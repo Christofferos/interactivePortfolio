@@ -67,6 +67,16 @@ main {
     }
   }
 
+  .about-info .bio p {
+    a {
+      text-decoration: underline;
+      &:hover {
+        color: $secondary-color;
+        @include easeOut;
+      }
+    }
+  }
+
   &#home {
     overflow: hidden;
     h1 {
@@ -79,7 +89,7 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
-    "bioimage bio bio"
+    "bioimage bio bio2"
     "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr);
 
@@ -92,6 +102,11 @@ main {
 
   .bio {
     grid-area: bio;
+    font-size: 1.5rem;
+  }
+
+  .bio2 {
+    grid-area: bio2;
     font-size: 1.5rem;
   }
 
