@@ -32,6 +32,12 @@
       }
     }
   }
+
+  @for $x from 1 through 4 {
+    .nav-link {
+      font-size: 52px;
+    }
+  }
 }
 
 // Desktops & Laptops
@@ -53,6 +59,12 @@
           transform: rotate(45deg) translate(8px, 8px);
         }
       }
+    }
+  }
+
+  @for $x from 1 through 4 {
+    .nav-link {
+      font-size: 40px;
     }
   }
 }
@@ -136,8 +148,41 @@
   #span-other {
     font-size: 20px;
   }
+  #span-resume {
+    font-size: 20px;
+  }
 
   .projects {
     grid-template-columns: 1fr;
+  }
+}
+
+// Smartphones tilted
+@include mediaTilted {
+  .menu-nav {
+    height: 100vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
+  }
+
+  .menu-branding {
+    height: 0vh;
+    transform: translate3d(100%, 0, 0);
+
+    .portrait {
+      background: url(../img/portrait_small.jpg);
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  .bio-image {
+    display: none;
+  }
+
+  #bg-img {
+    &:after {
+      height: 200%;
+    }
   }
 }

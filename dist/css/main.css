@@ -158,7 +158,8 @@ body {
     /* Sudo-element - puts in something that is not in the HTML - This is the overlay*/ }
     body#bg-img:after {
       content: "";
-      position: absolute;
+      position: fixed;
+      /* absolute */
       top: 0;
       right: 0;
       width: 100%;
@@ -310,7 +311,15 @@ main {
     height: 12px;
     margin: 0 0 10px 0; }
   .menu-btn.close .btn-line:nth-child(3) {
-    transform: rotate(-45deg) translate(26px, -24px); } }
+    transform: rotate(-45deg) translate(26px, -24px); }
+  .nav-link {
+    font-size: 52px; }
+  .nav-link {
+    font-size: 52px; }
+  .nav-link {
+    font-size: 52px; }
+  .nav-link {
+    font-size: 52px; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
@@ -319,7 +328,15 @@ main {
     width: 56px;
     height: 6px; }
   .menu-btn.close .btn-line:nth-child(1) {
-    transform: rotate(45deg) translate(8px, 8px); } }
+    transform: rotate(45deg) translate(8px, 8px); }
+  .nav-link {
+    font-size: 40px; }
+  .nav-link {
+    font-size: 40px; }
+  .nav-link {
+    font-size: 40px; }
+  .nav-link {
+    font-size: 40px; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -367,5 +384,24 @@ main {
     font-size: 20px; }
   #span-other {
     font-size: 20px; }
+  #span-resume {
+    font-size: 20px; }
   .projects {
     grid-template-columns: 1fr; } }
+
+@media screen and (max-height: 550px) and (max-width: 768px) {
+  .menu-nav {
+    height: 100vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 0vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      background: url(../img/portrait_small.jpg);
+      width: 150px;
+      height: 150px; }
+  .bio-image {
+    display: none; }
+  #bg-img:after {
+    height: 200%; } }
