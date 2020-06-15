@@ -59,7 +59,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  // opacity: 0.9;
   visibility: hidden;
 
   &.show {
@@ -81,7 +81,8 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: darken($primary-color, 5);
+    // background: darken($primary-color, 5);
+    background: rgba(darken($primary-color, 5), 0.9);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
@@ -94,7 +95,8 @@
 
   // Branding Side
   &-branding {
-    background: $primary-color;
+    // background: $primary-color;
+    background: rgba($primary-color, 0.9);
     transform: translate3d(0, 100%, 0);
     @include easeOut;
 

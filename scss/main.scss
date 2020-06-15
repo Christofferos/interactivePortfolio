@@ -163,6 +163,7 @@ main {
 
     &:hover {
       padding: 0.5rem 1.5rem;
+      transition-timing-function: ease;
       background: $secondary-color;
       color: set-text-color($secondary-color);
       span {
