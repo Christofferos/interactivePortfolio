@@ -264,6 +264,8 @@ main {
     font-size: 2rem;
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
+    background: #1d2937;
+    opacity: 98%;
     margin-bottom: 3rem;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
